@@ -1,2 +1,14 @@
 server:
-  port: 8080
+  address: 10.1.50.84
+  port: 9999
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://pgm-uf6279nzjxx0aau5ao.pg.rds.aliyuncs.com:5432/dev
+    username: dev
+    password: OcH224DIv9qlFGKq6kZa4W6ucIIddPVh
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: io.github.human0722.backend.model
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
